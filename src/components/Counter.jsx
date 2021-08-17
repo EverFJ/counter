@@ -6,13 +6,15 @@ class Counter extends React.Component {
       <div>
         <h2>{this.props.count}</h2>
         <button
-          style={{ backgroundColor: "red" }}
+          className="btn btn-danger"
+          // style={{ backgroundColor: "red" }}
           onClick={this.props.substract}
         >
           -
         </button>
         <button
-          style={{ backgroundColor: "green" }}
+          className="btn btn-success"
+          // style={{ backgroundColor: "green" }}
           onClick={this.props.increment}
         >
           +

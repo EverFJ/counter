@@ -1,20 +1,19 @@
 import React from "react";
+import "../App.css";
 
 class Counter extends React.Component {
   render() {
     return (
-      <div>
-        <h2>{this.props.count}</h2>
+      <div className="flex">
         <button
-          className="btn btn-danger"
-          // style={{ backgroundColor: "red" }}
+          style={{ backgroundColor: "red" }}
           onClick={this.props.substract}
         >
           -
         </button>
+        <h2>{this.props.count}</h2>
         <button
-          className="btn btn-success"
-          // style={{ backgroundColor: "green" }}
+          style={{ backgroundColor: "green" }}
           onClick={this.props.increment}
         >
           +
